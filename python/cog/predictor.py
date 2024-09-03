@@ -15,13 +15,14 @@ from typing import (
     Callable,
     Dict,
     List,
-    Literal,
     Optional,
     Type,
     Union,
     cast,
     get_type_hints,
 )
+
+from typing_extensions import Literal  # Python 3.7
 
 try:
     from typing import get_args, get_origin
